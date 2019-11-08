@@ -24,7 +24,7 @@ def nyc_pigeon_organizer(data)
           #if the name check comes up false
           pigeons[name] = {key => describe.to_s} #creates an entry for the missing pigeon plus key value data
         end
-        
+
         if pigeons[name].has_key?(key) # checks if each pigeons has key
 
           pigeons[name][key] << describe.to_s #adds describe value for exsisting name key
