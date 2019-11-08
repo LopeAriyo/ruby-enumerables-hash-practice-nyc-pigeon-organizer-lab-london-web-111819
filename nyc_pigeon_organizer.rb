@@ -30,7 +30,7 @@ def nyc_pigeon_organizer(data)
 
           else
 
-            
+             
           end
 
         end
