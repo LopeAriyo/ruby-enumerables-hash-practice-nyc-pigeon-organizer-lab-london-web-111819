@@ -1,6 +1,12 @@
 def nyc_pigeon_organizer(data)
 
-  pigeons = {}
+  pigeons = {"Theo" => {},
+            "Peter Jr." => {},
+            "Lucky" => {},
+            "Ms. K" => {},
+            "Queenie" => {},
+            "Andrew" => {},
+            "Alex" => {}}
   # write your code here!
 
   data.each do |key, value| #keys from data are colour, gender, lives
