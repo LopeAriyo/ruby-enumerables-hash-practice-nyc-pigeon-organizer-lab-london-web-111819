@@ -11,7 +11,7 @@ def nyc_pigeon_organizer(data)
              "Andrew" => {},
              "Alex" => {}}
 
-    
+
 
 
   data.each do |key, value| #keys from data are colour, gender, lives
