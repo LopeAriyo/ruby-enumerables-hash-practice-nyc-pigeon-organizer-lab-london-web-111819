@@ -26,8 +26,11 @@ def nyc_pigeon_organizer(data)
 
           if pigeons[name].has_key?(descriptor) == nil   # checks if each pigeon has existing descriptors
             #if the descriptor check comes up false:
-            pigeons[name][descriptor] = []  #adds an empty array for new descriptor keys
+            pigeons[name][descriptor] = [info.to_s]  #adds an empty array for new descriptor keys
 
+          else
+
+            
           end
 
         end
