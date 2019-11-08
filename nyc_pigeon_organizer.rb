@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
 
 
 
-  data.each do |key, value| #keys from data are colour, gender, lives
+  data.each do |descriptor, value| #keys from data are colour, gender, lives
     value.each do |info, list_of_names|
       list_of_names.each do |name|
 
@@ -23,9 +23,9 @@ def nyc_pigeon_organizer(data)
           pigeons[name] = {} #key => info.to_s} #creates an entry for the missing pigeon plus key value data
         end
 
-        if pigeons[name].has_key?(info)   # checks if each pigeon has existing info
+        if pigeons[name].has_key?(descriptor) == nil   # checks if each pigeon has existing descriptors
 
-          pigeons[name][key] = []  #adds describe value for exsisting name key
+          pigeons[name][descriptor] = []  #adds an empty array for new descriptor keys
 
         end
 
