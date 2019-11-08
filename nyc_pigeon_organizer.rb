@@ -12,14 +12,13 @@ def nyc_pigeon_organizer(data)
 
         if pigeons.has_key?(name) == false # checks if the pigeons hash has all necessary names added
           #if the name check comes up false:
-          pigeons[name] = {descriptor => info.to_s} #creates an entry for the missing pigeon plus key value data
-          #pigeons[name][descriptor] = [info.to_s] #creates new key and assigns a describe value for exsisting name only
+          pigeons[name] = {}#descriptor => info.to_s} #creates an entry for the missing pigeon plus key value data
+          
         end
 
         if pigeons[name].has_key?(descriptor) == false   # checks if each pigeon has existing descriptors
             #if the descriptor check comes up false:
-            pigeons[name][descriptor] = [info.to_s]  #adds an empty array for new descriptor keys
-
+            pigeons[name][descriptor] = []#info.to_s]  #adds an empty array for new descriptor keys
         end
 
 
