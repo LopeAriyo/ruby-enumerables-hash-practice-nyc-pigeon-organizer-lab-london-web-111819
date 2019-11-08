@@ -23,15 +23,15 @@ def nyc_pigeon_organizer(data)
           pigeons[name] = {} #key => info.to_s} #creates an entry for the missing pigeon plus key value data
         end
 
-        if pigeons[name].has_key?(key) # checks if each pigeons has key
+        if pigeons[name].has_key?(key)  == nil # checks if each pigeons has key
 
-          pigeons[name][key] << info.to_s #adds describe value for exsisting name key
-
-        else
-
-          pigeons[name][key] = [info.to_s] #creates new key and assigns a describe value for exsisting name only
+          pigeons[name][key] = []  #adds describe value for exsisting name key
 
         end
+
+        pigeons[name][key] = [info.to_s] #creates new key and assigns a describe value for exsisting name only
+
+        
 
       end
     end
