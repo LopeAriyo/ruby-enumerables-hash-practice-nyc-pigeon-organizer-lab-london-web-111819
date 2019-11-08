@@ -20,8 +20,8 @@ def nyc_pigeon_organizer(data)
 
         if pigeons.has_key?(name) == nil # checks if the pigeons hash has all necessary names added
           #if the name check comes up false:
-          pigeons[name] = {} #key => info.to_s} #creates an entry for the missing pigeon plus key value data
-          pigeons[name][descriptor] = [info.to_s] #creates new key and assigns a describe value for exsisting name only
+          pigeons[name] = {descriptor => info.to_s} #creates an entry for the missing pigeon plus key value data
+          #pigeons[name][descriptor] = [info.to_s] #creates new key and assigns a describe value for exsisting name only
         else
 
           if pigeons[name].has_key?(descriptor) == nil   # checks if each pigeon has existing descriptors
