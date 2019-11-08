@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
 
         if pigeons.has_key?(name) == false # checks if the pigeons hash has all necessary names added
           #if the name check comes up false:
-          pigeons[name] = {} #creates an entry for the missing pigeon 
+          pigeons[name] = {} #creates an entry for the missing pigeon
 
         end
 
