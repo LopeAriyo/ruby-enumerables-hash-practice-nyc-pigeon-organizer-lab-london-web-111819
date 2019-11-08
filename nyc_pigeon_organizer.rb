@@ -28,6 +28,10 @@ def nyc_pigeon_organizer(data)
             #if the descriptor check comes up false:
             pigeons[name][descriptor] = [info.to_s]  #adds an empty array for new descriptor keys
 
+          else
+
+            pigeons[name][descriptor] = [info.to_s]
+
           end
 
         end
