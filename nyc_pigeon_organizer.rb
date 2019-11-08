@@ -3,15 +3,15 @@ require 'pry'
 def nyc_pigeon_organizer(data)
 
 # write your code here!
-  pigeons = {}
+  pigeons = {"Theo" => {},
+             "Peter Jr." => {},
+             "Lucky" => {},
+             "Ms. K" => {},
+             "Queenie" => {},
+             "Andrew" => {},
+             "Alex" => {}}
 
-    #{}"Theo" => {},
-            #{}"Peter Jr." => {},
-            #{}"Lucky" => {},
-            #{}"Ms. K" => {},
-            #{}"Queenie" => {},
-            #{}"Andrew" => {},
-            #{}"Alex" => {}
+    
 
 
   data.each do |key, value| #keys from data are colour, gender, lives
