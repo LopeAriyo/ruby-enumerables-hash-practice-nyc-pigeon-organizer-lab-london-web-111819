@@ -10,7 +10,7 @@ def nyc_pigeon_organizer(data)
             #{}"Queenie" => {},
             #{}"Andrew" => {},
             #{}"Alex" => {}
-  
+
 
   data.each do |key, value| #keys from data are colour, gender, lives
     value.each do |describe, array|
