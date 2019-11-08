@@ -31,7 +31,7 @@ def nyc_pigeon_organizer(data)
 
         pigeons[name][key] = [info.to_s] #creates new key and assigns a describe value for exsisting name only
 
-        
+
 
       end
     end
