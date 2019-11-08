@@ -21,6 +21,7 @@ def nyc_pigeon_organizer(data)
             pigeons[name][descriptor] = []#info.to_s]  #adds an empty array for new descriptor keys
         end
 
+       pigeons[name][descriptor].push(info.to_s)
 
       end
     end
