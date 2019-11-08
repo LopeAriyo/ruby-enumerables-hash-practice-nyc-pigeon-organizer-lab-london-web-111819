@@ -22,7 +22,7 @@ def nyc_pigeon_organizer(data)
           #if the name check comes up tru
         else
           #if the name check comes up false
-          pigeons[name] = {key => info.to_s} #creates an entry for the missing pigeon plus key value data
+          pigeons[name] = {} #key => info.to_s} #creates an entry for the missing pigeon plus key value data
         end
 
         if pigeons[name].has_key?(key) # checks if each pigeons has key
