@@ -29,7 +29,7 @@ def nyc_pigeon_organizer(data)
             pigeons[name][descriptor] << [info.to_s]  #adds an empty array for new descriptor keys
 
           else
-            
+
             pigeons[name][descriptor] = [info.to_s]
 
           end
