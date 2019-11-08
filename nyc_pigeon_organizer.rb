@@ -17,11 +17,11 @@ def nyc_pigeon_organizer(data)
           if pigeons[name].has_key?(key) # checks if each pigeons has key
 
             pigeons[name][key] << describe.to_s #adds describe value for exsisting name key
-          
+
           else
-            
+
             pigeons[name][key] = [describe.to_s] #creates new key and assigns a describe value for exsisting name only
-            
+
           end
 
         else
@@ -33,5 +33,5 @@ def nyc_pigeon_organizer(data)
   end
 
   pigeons
-  
+
 end
