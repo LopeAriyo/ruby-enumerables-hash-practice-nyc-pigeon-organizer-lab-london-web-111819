@@ -18,9 +18,7 @@ def nyc_pigeon_organizer(data)
     value.each do |info, list_of_names|
       list_of_names.each do |name|
 
-        if pigeons.has_key?(name) # checks if the pigeons hash has all necessary names added
-          #if the name check comes up tru
-        else
+        if pigeons.has_key?(name) == nil # checks if the pigeons hash has all necessary names added
           #if the name check comes up false
           pigeons[name] = {} #key => info.to_s} #creates an entry for the missing pigeon plus key value data
         end
